@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介LP - 石﨑太雅</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            background-color: #f0fdf4; /* Tailwind green-50 */
+        }
+        .ca-green {
+            color: #22c55e; /* Tailwind green-500 */
+        }
+        .ca-bg-green {
+            background-color: #22c55e; /* Tailwind green-500 */
+        }
+        .ca-bg-light-green {
+            background-color: #dcfce7; /* Tailwind green-100 */
+        }
+        .ca-border-green {
+            border-color: #22c55e; /* Tailwind green-500 */
+        }
+        .hero-bg {
+            background: linear-gradient(to right, #15803d, #22c55e); /* Tailwind green-700 to green-500 */
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700;
+            margin-bottom: 1.5rem; /* mb-6 */
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 2rem; /* p-8 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .tag {
+            background-color: #dcfce7; /* Tailwind green-100 */
+            color: #166534; /* Tailwind green-800 */
+            padding: 0.25rem 0.75rem; /* px-3 py-1 */
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 500;
+        }
+        .icon {
+            width: 3rem; /* w-12 */
+            height: 3rem; /* h-12 */
+            margin-right: 1rem; /* mr-4 */
+            color: #22c55e; /* Tailwind green-500 */
+        }
+        /* CyberAgent Ameba-kun like mascot (simple version) */
+        .ameba-kun {
+            width: 100px;
+            height: 100px;
+            background-color: #22c55e; /* ca-green */
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: relative;
+            margin: 20px auto;
+            animation: float 3s ease-in-out infinite;
+        }
+        .ameba-kun::before, .ameba-kun::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .ameba-kun::before { /* eye */
+            width: 15px;
+            height: 20px;
+            top: 30px;
+            left: 25px;
+        }
+        .ameba-kun::after { /* eye */
+            width: 15px;
+            height: 20px;
+            top: 30px;
+            right: 25px;
+        }
+        .ameba-mouth {
+            position: absolute;
+            width: 30px;
+            height: 15px;
+            background-color: white;
+            border-radius: 0 0 15px 15px;
+            top: 55px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Fallback for image */
+        .profile-image-fallback {
+            background-color: #e5e7eb; /* Tailwind gray-200 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem; /* text-xl */
+            color: #4b5563; /* Tailwind gray-600 */
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-bg text-white py-20 px-6">
+        <div class="container mx-auto text-center">
+            <div class="ameba-kun mb-4">
+                <div class="ameba-mouth"></div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">石﨑 太雅 (Ishizaki Taiga)</h1>
+            <p class="text-xl md:text-2xl mb-8">サイバーエージェント内定者</p>
+            <p class="text-lg md:text-xl">「行動量」と「やりきる力」で、未来を切り拓く！</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="about" class="mb-16">
+            <h2 class="section-title ca-green">私について</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="card">
+                    <div class="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center mb-6 profile-image-fallback"
+                         onerror="this.classList.add('profile-image-fallback'); this.innerText='画像準備中';">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                          </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 ca-green">石﨑 太雅</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        少数ベンチャー企業の立ち上げ経験を通じて、圧倒的な行動量の重要性を学びました。
+                        大きな目標を達成するためには、困難に立ち向かい最後までやりきる力が必要不可欠であると信じています。
+                        これらの力を武器に、サイバーエージェントで新たな価値を創造し、将来的には子会社社長を目指します。
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <div class="card">
+                        <div class="flex items-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.314.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.314m-2.7 2.45a15.09 15.09 0 002.448 2.448 14.9 14.9 0 00.314-.06m2.448-2.448a15.09 15.09 0 01-.06.314m-2.448.932a6 6 0 01-7.381-5.84m5.84 0a6 6 0 017.381 5.84M14.37 15.59v4.8m0-4.8a6 6 0 01-5.84-7.38M14.37 15.59a6 6 0 017.38 5.84M14.37 15.59a14.926 14.926 0 005.841-2.58m-.119 8.54a6 6 0 01-7.381-5.84M9.631 8.41a14.927 14.927 0 012.58-5.84m2.699 2.7c.103-.021.207-.041.314-.06a15.09 15.09 0 002.448 2.448 14.9 14.9 0 00-.06.314M12 17.25a6 6 0 002.448-2.448 14.9 14.9 0 00-.314.06M12 17.25a6 6 0 01-2.448-2.448 14.9 14.9 0 01.314.06" />
+                            </svg>
+                            <h3 class="text-xl font-semibold ca-green">私の特徴</h3>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold text-gray-800">圧倒的な行動量：</strong>アイデアを即座に実行に移し、トライ＆エラーを繰り返します。</li>
+                            <li><strong class="font-semibold text-gray-800">最後までやりきる力：</strong>困難な状況でも諦めず、目標達成に向けて粘り強く取り組みます。</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                         <div class="flex items-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                            </svg>
+                            <h3 class="text-xl font-semibold ca-green">将来の目標</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">サイバーエージェントで多くの経験を積み、将来的には<strong class="font-semibold text-gray-800 ca-green">子会社社長</strong>になることを目指しています。常に挑戦し続け、会社と共に成長していきたいです。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="internship" class="mb-16 ca-bg-light-green py-12 px-6 rounded-xl shadow-lg">
+            <h2 class="section-title ca-green">インターンシップ経験</h2>
+            <div class="card max-w-3xl mx-auto">
+                <div class="flex items-center mb-4">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-2xl font-semibold ca-green">株式会社Lime - 「Best Intern賞」最優秀賞受賞</h3>
+                </div>
+                <p class="text-sm text-gray-500 mb-3">2023年11月22日、「第4回 チアキャリアアワード2023」</p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    株式会社Limeでは、採用と人材育成に携わりました。「日本を盛り上げる起業家人材を輩出する」という理念のもと、平均年齢22.6歳の若いチームで、創業から5期連続増収増益、昨対売上300%成長という成果に貢献できたことを誇りに思います。
+                    この経験を通じて、目標達成のための戦略立案、チームワーク、そして何よりも「挑戦し続けること」の大切さを学びました。
+                </p>
+                <div class="text-center">
+                    <span class="tag">採用担当</span>
+                    <span class="tag">人材育成</span>
+                    <span class="tag">事業成長貢献</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="mb-16">
+            <h2 class="section-title ca-green">趣味と生きがい</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 mx-auto mb-4 ca-green">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2 ca-green">筋トレ</h3>
+                    <p class="text-gray-600">日々の成長を実感できる。目標設定と達成のプロセスが楽しい。</p>
+                </div>
+                <div class="card text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 mx-auto mb-4 ca-green">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.608a8.287 8.287 0 003 2.475A8.333 8.333 0 0012 15a8.333 8.333 0 003-2.917c1.15-.376 2.166-.92 2.963-1.592a8.287 8.287 0 00-2.601-5.279zM15 12H9" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2 ca-green">サウナ</h3>
+                    <p class="text-gray-600">心身ともにリフレッシュ。思考を整理し、新たな活力を得る。</p>
+                </div>
+                <div class="card text-center">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 mx-auto mb-4 ca-green">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H5.25a7.5 7.5 0 00-7.5 7.5v.75m0 0h15M12.75 19.5a7.5 7.5 0 01-7.5-7.5H5.25M15 9.75v7.5m0-7.5a7.5 7.5 0 017.5 7.5v.75m0 0h.75A2.25 2.25 0 0021 18V9.75A2.25 2.25 0 0018.75 7.5H16.5M15 9.75a7.5 7.5 0 00-7.5-7.5H5.25a7.5 7.5 0 000 15h2.25" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2 ca-green">サーフィン</h3>
+                    <p class="text-gray-600">自然との一体感。挑戦し、波に乗る達成感がたまらない。</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center card max-w-2xl mx-auto">
+                <div class="flex items-center justify-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-4.5A3.375 3.375 0 0012.375 9.75h-.75A3.375 3.375 0 008.25 13.5v4.5M16.5 18.75a3 3 0 00-3-3h-3a3 3 0 00-3 3M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <h3 class="text-2xl font-semibold ca-green">私の生きがい：挑戦と成長</h3>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    インターンシップも筋トレも、常に新しいことに挑戦し、自分自身が成長していく過程が何よりも楽しいです。
+                    サイバーエージェントでも、この「挑戦と成長」を胸に、日々邁進していきます！
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="ca-bg-green text-white text-center py-8">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Taiga Ishizaki - CyberAgent Prospective Employee</p>
+            <p class="mt-2 text-sm text-green-200">このページは社内認知拡大を目的として作成されました。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
